@@ -1,0 +1,27 @@
+#!/usr/bin/sh
+
+set -e
+
+confdir='.config/'
+
+checkAndInstallDir() {
+    if [ -d $1 ]; then
+        cp $1 ./$confdir -r
+    fi
+}
+
+checkAndInstallFile() {
+    if [ -e $1 ]; then
+        cp $1 .
+    fi
+}
+
+if ! [ -d $confdir ]; then
+    mkdir $confdir
+fi
+
+checkAndInstallDir ~/.config/alacritty/
+checkAndInstallDir ~/.config/clangd/
+checkAndInstallDir ~/.config/nvim/
+checkAndInstallFile ~/.bashrc
+checkAndInstallFile ~/.gitconfig

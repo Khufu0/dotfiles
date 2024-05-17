@@ -1,0 +1,10 @@
+[user]
+    email = nourr313@proton.me
+    name = Nour
+[core]
+	editor = nvim
+	excludesFile = ~/.gitignore
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
