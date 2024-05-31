@@ -38,6 +38,11 @@ return {
           ["<C-f>"] = cmp.mapping.scroll_docs(4),
 
           ["<CR>"] = cmp.mapping.confirm { select = true },
+          ["<C-A>"] = function()
+            if cmp.visible() then
+              cmp.abort()
+            end
+          end,
         },
         sources = {
           { name = "nvim_lsp" },

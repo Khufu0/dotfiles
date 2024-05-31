@@ -25,3 +25,4 @@ checkAndInstallDir ~/.config/clangd/
 checkAndInstallDir ~/.config/nvim/
 checkAndInstallFile ~/.bashrc
 checkAndInstallFile ~/.gitconfig
+checkAndInstallFile ~/.gitignore

@@ -13,15 +13,14 @@ vim.opt.wrap = false
 vim.opt.number = true
 vim.opt.relativenumber = false
 
--- lualine works
 vim.opt.showmode = false
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Use an indentation of 4 spaces.
-vim.opt.sw = 4
-vim.opt.ts = 4
+-- Use an indentation of 2 spaces.
+vim.opt.sw = 2
+vim.opt.ts = 2
 vim.opt.et = true
 
 -- disable nvim intro

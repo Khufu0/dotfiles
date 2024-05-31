@@ -1,13 +1,13 @@
-import = [ "~/.config/alacritty/themes/catppuccin-frappe.toml" ]
+import = [ "~/.config/alacritty/themes/everforest_dark.toml" ]
 
 [window]
-opacity = 1
+opacity = 0.9
 
 padding.x = 0
 padding.y = 0
 
 decorations = "Full"
-decorations_theme_variant = "Dark"
+decorations_theme_variant = "None"
 
 [env]
 TERM = "xterm-256color"

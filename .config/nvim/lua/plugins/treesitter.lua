@@ -2,15 +2,23 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    version = "0.9",
+    --  version = "0.9",
     opts = {
-      ensure_installed = { "bash", "rust", "cpp", "lua", "markdown", "vimdoc" },
+      ensure_installed = {
+        "bash",
+        "rust",
+        "cpp",
+        "lua",
+        "markdown",
+        "toml",
+        "vimdoc",
+      },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
         enable = true,
       },
-      indent = { enable = true },
+      indent = { enable = false },
     },
     config = function(_, opts)
       -- Prefer git instead of curl in order to improve connectivity in some environments
