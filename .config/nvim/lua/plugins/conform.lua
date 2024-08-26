@@ -6,7 +6,7 @@ return {
       cpp = { "clang-format" },
       lua = { "stylua" },
       sh = { "shfmt" },
-      rust = { "rustfmt" },
+      python = { "black" },
     },
     format_on_save = {
       lsp_fallback = true,

@@ -99,12 +99,13 @@ return {
         },
       }
 
-      lsp.rust_analyzer.setup {
-        settings = {
-          ["rust-analyzer"] = {
-            diagnostics = {
-              enable = true,
-            },
+      lsp.pyright.setup {
+        python = {
+          analysis = {
+            typeCheckingMode = "strict",
+            autoSearchPaths = true,
+            diagnosticMode = "openFilesOnly",
+            useLibraryCodeForTypes = true,
           },
         },
       }

@@ -13,6 +13,8 @@ return {
             "lua-language-server",
             "stylua",
             "shfmt",
+            "pyright",
+            "black",
           },
 
           -- if set to true this will check each tool for updates. If updates

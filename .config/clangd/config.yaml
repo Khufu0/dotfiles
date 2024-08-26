@@ -1,5 +1,5 @@
 CompileFlags:
-  Add: -Wno-unknown-warning-option
+  Add: [-Wno-unknown-warning-option, -Wno-pp-file-not-found-angled-include-not-fatal]
   Remove: [-m*, -f*]
-# Diagnostics:
-#   Suppress: "*"
+  #Diagnostics:
+  #   Suppress: "*"

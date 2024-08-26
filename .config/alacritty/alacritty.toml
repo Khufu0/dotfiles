@@ -1,7 +1,7 @@
 import = [ "~/.config/alacritty/themes/everforest_dark.toml" ]
 
 [window]
-opacity = 0.9
+opacity = 0.8
 
 padding.x = 0
 padding.y = 0
@@ -14,5 +14,5 @@ TERM = "xterm-256color"
 
 [font]
 normal = { family = "SauceCodeProNerdFont", style = "Regular" }
-size = 18.0
+size = 17.0
 
