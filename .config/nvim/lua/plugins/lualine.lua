@@ -6,6 +6,6 @@ return {
       theme = "auto",
       globalstatus = true,
     },
-    extensions = { "neo-tree", "lazy", "trouble" },
+    extensions = { "neo-tree", "lazy" },
   },
 }

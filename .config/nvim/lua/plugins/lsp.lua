@@ -90,7 +90,6 @@ return {
         },
         cmd = {
           "clangd",
-          "--query-driver=/usr/bin/g++,/usr/bin/gcc",
           "--header-insertion=never",
           "--completion-style=detailed",
           "--function-arg-placeholders",
@@ -102,7 +101,6 @@ return {
       lsp.pyright.setup {
         python = {
           analysis = {
-            typeCheckingMode = "strict",
             autoSearchPaths = true,
             diagnosticMode = "openFilesOnly",
             useLibraryCodeForTypes = true,
