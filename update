@@ -5,24 +5,25 @@ set -e
 confdir='.config/'
 
 checkAndInstallDir() {
-    if [ -d $1 ]; then
-        cp $1 ./$confdir -r
-    fi
+  if [ -d $1 ]; then
+    cp $1 $2 -r
+  fi
 }
 
 checkAndInstallFile() {
-    if [ -e $1 ]; then
-        cp $1 .
-    fi
+  if [ -e $1 ]; then
+    cp $1 $2
+  fi
 }
 
 if ! [ -d $confdir ]; then
-    mkdir $confdir
+  mkdir $confdir
 fi
 
-checkAndInstallDir ~/.config/alacritty/
-checkAndInstallDir ~/.config/clangd/
-checkAndInstallDir ~/.config/nvim/
-checkAndInstallFile ~/.bashrc
-checkAndInstallFile ~/.gitconfig
-checkAndInstallFile ~/.gitignore
+checkAndInstallDir ~/.config/alacritty/ ./$confdir
+checkAndInstallDir ~/.config/clangd/ ./$confdir
+checkAndInstallDir ~/.config/nvim/ ./$confdir
+checkAndInstallDir ~/.config/mpv/ ./$confdir
+checkAndInstallFile ~/.config/xdg-terminals.list ./$confdir
+checkAndInstallFile ~/.bashrc .
+checkAndInstallFile ~/.gitconfig .

@@ -1,5 +1,11 @@
 CompileFlags:
-  Add: [-Wno-unknown-warning-option, -Wno-pp-file-not-found-angled-include-not-fatal]
-  Remove: [-m*, -f*]
-  #Diagnostics:
-  #   Suppress: "*"
+    Add:
+        [
+            -std=c++20,
+            -Wall,
+            -Wextra,
+            -Wpedantic,
+            -Wshadow,
+            -Wno-unknown-warning-option,
+            -Wno-unknown-pragmas,
+        ]
