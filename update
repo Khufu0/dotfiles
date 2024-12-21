@@ -3,6 +3,7 @@
 set -e
 
 confdir='.config/'
+localdir='.local/'
 
 checkAndInstallDir() {
   if [ -d $1 ]; then
@@ -20,10 +21,17 @@ if ! [ -d $confdir ]; then
   mkdir $confdir
 fi
 
+if ! [ -d $localdir ]; then
+  mkdir $localdir
+fi
+
+checkAndInstallFile ~/.bashrc .
+checkAndInstallFile ~/.gitconfig .
+
 checkAndInstallDir ~/.config/alacritty/ ./$confdir
 checkAndInstallDir ~/.config/clangd/ ./$confdir
 checkAndInstallDir ~/.config/nvim/ ./$confdir
 checkAndInstallDir ~/.config/mpv/ ./$confdir
 checkAndInstallFile ~/.config/xdg-terminals.list ./$confdir
-checkAndInstallFile ~/.bashrc .
-checkAndInstallFile ~/.gitconfig .
+
+checkAndInstallDir ~/.local/bin/ ./$localdir

@@ -3,6 +3,7 @@
     name = Nour
 [core]
 	editor = nvim
+	excludesFile = ~/.gitignore
 [init]
 	defaultBranch = main
 [pull]

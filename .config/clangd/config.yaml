@@ -1,11 +1,11 @@
 CompileFlags:
-    Add:
-        [
-            -std=c++20,
-            -Wall,
-            -Wextra,
-            -Wpedantic,
-            -Wshadow,
-            -Wno-unknown-warning-option,
-            -Wno-unknown-pragmas,
-        ]
+  Add:
+      [
+          -std=c++20,
+          -Wall,
+          -Wextra,
+          -Wpedantic,
+          -Wshadow,
+          -Wno-unknown-warning-option,
+          -Wno-unknown-pragmas,
+      ]
