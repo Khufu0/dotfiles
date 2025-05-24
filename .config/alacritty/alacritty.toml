@@ -1,4 +1,6 @@
 [window]
+dimensions = { columns = 60, lines = 16 }
+
 opacity = 0.8
 
 padding.x = 0
@@ -11,7 +13,7 @@ decorations_theme_variant = "None"
 TERM = "xterm-256color"
 
 [font]
-normal = { family = "SauceCodeProNerdFont", style = "Regular" }
+normal = { family = "SourceCodePro", style = "Regular" }
 size = 17.0
 
 [general]
